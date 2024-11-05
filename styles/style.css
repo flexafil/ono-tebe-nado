@@ -52,6 +52,39 @@
   padding-left: 26px;
 }
 
+.cover {
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 757px;
+  width: 100%;
+}
+
+.cover__title {
+  position: absolute;
+  top: 165px;
+  left: 50px;
+  font-weight: 700;
+  font-size: 100px;
+  color: #fff;
+  width: 1000px;
+  letter-spacing: 30%;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .lots {
   padding: 179px 24px 146px;
 }
