@@ -131,6 +131,7 @@
   padding-left: 40px;
   font-size: 40px;
   padding-bottom: 27px;
+
 }
 
 .lots-area {
@@ -141,7 +142,6 @@
 }
 
 .lot {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -150,6 +150,18 @@
   align-items: space-between;
   color: #fff;
   position: relative;
+}
+
+.lot1.lot {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/card-lot-01.jpg);
+}
+
+.lot2.lot {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/card-lot-02.jpg);
+}
+
+.lot3.lot {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/card-lot-03.jpg);
 }
 
 .lot-title {
@@ -166,6 +178,7 @@
 .lot-description {
   position: absolute;
   font-size: 20px;
+  line-height: 24px;
   bottom: 50px;
   left: 40px;
   right: 40px;
