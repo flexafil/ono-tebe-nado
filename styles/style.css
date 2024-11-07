@@ -9,6 +9,11 @@
 
 .header__menu-link {
   border-bottom: 1px solid black;
+  letter-spacing: 0.01em;
+}
+
+.header__menu-item_active .header__menu-link {
+  border-bottom: 0px;
 }
 
 .header__logo {
@@ -26,10 +31,12 @@
   grid-area: contacts;
   justify-self: end;
   padding-right: 28px;
+  line-height: 24.3px;
 }
 
 .header__menu-contacts {
   max-width: 237px;
+  letter-spacing: normal;
 }
 
 .header {
@@ -50,6 +57,7 @@
   list-style-type: none;
   grid-area: nav;
   padding-left: 26px;
+  letter-spacing: 0.01em;
 }
 
 .cover {
@@ -70,12 +78,17 @@
   font-size: 100px;
   color: #fff;
   width: 1000px;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
+  line-height: 100px;
   text-transform: uppercase;
 }
 
 .accent-span {
   display: block;
+}
+
+.lh115 {
+  line-height: 115px;
 }
 
 .text-center {
@@ -88,7 +101,7 @@
 
 .text-space {
   text-transform: uppercase;
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .cover-text {
