@@ -85,6 +85,7 @@
 
 .accent-span {
   display: block;
+  margin-bottom: 20px;
 }
 
 .lh115 {
@@ -104,12 +105,20 @@
   letter-spacing: 0.6em;
 }
 
+.ls_normal {
+  letter-spacing: normal;
+}
+
 .cover-text {
   text-transform: uppercase;
-  word-spacing: 20px;
   color: #fff;
   line-height: 28px;
   font-weight: 400;
+  word-spacing: 0.9em;
+}
+
+.ws80 {
+  word-spacing: 0.8em;
 }
 
 .button {
@@ -186,6 +195,7 @@
   left: 40px;
   right: 40px;
   font-size: 22px;
+  line-height: 26.4px;
 }
 
 .lot-description {
@@ -196,6 +206,62 @@
   left: 40px;
   right: 40px;
   font-weight: 400;
+}
+
+.lots__show-more_link {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 30px 40px 0px 40px;
+}
+
+.about {
+  position: relative;;
+  padding: 0px 24px 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 595px;
+  gap: 72px;
+  grid-template-areas:
+  "whitelogo description";
+}
+
+.background-image {
+  position: absolute;
+  left: 47px;
+  top: 35px;
+  display: flex;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+  grid-area: whitelogo;
+  padding-left: 47px;
+  justify-self: right;
+}
+
+.about__logo {
+  margin: auto;
+}
+
+.about__logo-image {
+  height: 113px;
+}
+
+.about__title {
+  grid-area: description;
+  position: absolute;
+  top: 133px;
+  left: 0px;
+
+}
+
+.about__description {
+  width: 693px;
+  position: absolute;
+  top: 283px;
+  left: 0px;
 }
 
 .footer {
