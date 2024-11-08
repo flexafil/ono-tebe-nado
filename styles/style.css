@@ -1,10 +1,13 @@
 /* место для вашего кода */
+address {
+  font-style: normal;
+}
+
 .circle {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   border: 1px solid black;
-  
 }
 
 .header__menu-link {
@@ -17,7 +20,7 @@
 }
 
 .header__logo {
-  height:105px;
+  height: 105px;
   grid-area: logo;
 }
 
@@ -44,8 +47,7 @@
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   grid-template-rows: 105px;
-  grid-template-areas: 
-  "nav logo contacts";
+  grid-template-areas: "nav logo contacts";
   align-items: center;
 }
 
@@ -62,7 +64,8 @@
 
 .cover {
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/cover.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -153,7 +156,6 @@
   padding-left: 40px;
   font-size: 40px;
   padding-bottom: 27px;
-
 }
 
 .lots-area {
@@ -175,15 +177,18 @@
 }
 
 .lot1.lot {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/card-lot-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/card-lot-01.jpg);
 }
 
 .lot2.lot {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/card-lot-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/card-lot-02.jpg);
 }
 
 .lot3.lot {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/card-lot-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/card-lot-03.jpg);
 }
 
 .lot-title {
@@ -193,7 +198,7 @@
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
   font-weight: 700;
-  top: 50px;
+  top: 51px;
   left: 40px;
   right: 40px;
   font-size: 22px;
@@ -204,10 +209,14 @@
   position: absolute;
   font-size: 20px;
   line-height: 24px;
-  bottom: 50px;
+  bottom: 48px;
   left: 40px;
   right: 40px;
   font-weight: 400;
+}
+
+.ls13 {
+  letter-spacing: 0.13em;
 }
 
 .lots__show-more_link {
@@ -224,8 +233,7 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 595px;
   gap: 15px;
-  grid-template-areas:
-  "whitelogo description";
+  grid-template-areas: "whitelogo description";
 }
 
 .background-image {
@@ -271,8 +279,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px;
-  grid-template-areas: 
-  "contacts footer-nav icons";
+  grid-template-areas: "contacts footer-nav icons";
 }
 
 .contacts.footer-area {
