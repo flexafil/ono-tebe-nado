@@ -189,7 +189,9 @@
 .lot-title {
   position: absolute;
   text-transform: uppercase;
-  border-bottom: 1px solid #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   font-weight: 700;
   top: 50px;
   left: 40px;
@@ -217,32 +219,26 @@
 }
 
 .about {
-  position: relative;;
   padding: 0px 24px 0px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 595px;
-  gap: 72px;
+  gap: 15px;
   grid-template-areas:
   "whitelogo description";
 }
 
 .background-image {
-  position: absolute;
-  left: 47px;
-  top: 35px;
   display: flex;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background-color: #000;
   grid-area: whitelogo;
-  padding-left: 47px;
-  justify-self: right;
-}
-
-.about__logo {
-  margin: auto;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 .about__logo-image {
@@ -251,20 +247,56 @@
 
 .about__title {
   grid-area: description;
-  position: absolute;
-  top: 133px;
-  left: 0px;
-
+  text-transform: uppercase;
+  margin-top: 136px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .about__description {
-  width: 693px;
-  position: absolute;
-  top: 283px;
-  left: 0px;
+  margin-top: 100px;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+}
+
+.ls4.about__description {
+  margin-top: 24px;
+  letter-spacing: normal;
 }
 
 .footer {
-  padding: 180px 50px 88px;
+  padding: 182px 50px 88px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-template-areas: 
+  "contacts footer-nav icons";
 }
 
+.contacts.footer-area {
+  justify-self: start;
+}
+
+.header__menu-list.footer-area {
+  grid-area: footer-nav;
+  flex-direction: column;
+  gap: 0;
+  justify-self: center;
+  padding: 0;
+}
+
+.icons-list {
+  display: flex;
+  justify-self: end;
+  grid-area: icons;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
