@@ -31,8 +31,6 @@ address {
 .contacts {
   font-size: 18px;
   list-style-type: none;
-  grid-area: contacts;
-  justify-self: end;
   padding-right: 28px;
   line-height: 24.3px;
 }
@@ -40,6 +38,11 @@ address {
 .header__menu-contacts {
   max-width: 237px;
   letter-spacing: normal;
+}
+
+.header__addresses {
+  grid-area: contacts;
+  justify-self: end;
 }
 
 .header {
